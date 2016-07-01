@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="25dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Puzzle ?"
+        android:gravity="center"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <TextView android:id="@+id/tv_first"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="5"
+                android:background="#e7e6e6"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="+" />
+
+            <EditText android:id="@+id/tv_second"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="5"
+                android:background="#e7e6e6"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="=" />
+
+            <TextView android:id="@+id/tv_expected_result"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="5"
+                android:background="#e7e6e6"/>
+
+        </LinearLayout>
+
+        <Button android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+    </FrameLayout>
+
+</LinearLayout>
